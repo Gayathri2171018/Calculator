@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>REGISTRATION FORM</title>
+    
+    <script>
+        function fetch()
+        {
+            var get=document.getElementById("get").value;
+            document.getElementById("put").value=get;
+        }
+    </script>
+    <style>
+        body{
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <fieldset>
+            <legend ><center><h2>Registration form</h2></center></legend>
+        <table>
+           <tr>
+            <td>Full Name:</td>
+            <td><input type="Name" placeholder="Name" name="text"></td>
+           </tr>
+           <tr>
+            <td>Roll Number:</td>
+            <td><input type="Number" placeholder="Number" name="text"></td>
+           </tr>
+           <tr>
+            <td>DOB:</td>
+            <td><input type="date" placeholder="Date" name=""></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female
+                <input type="radio" name="Gender">Others
+            </td>
+        </tr>
+        <tr>
+            <td>EDUCATION</td>
+            <td>
+                <select education="course" id="">
+                    <option value="SSC">SSC</option>
+                    <option value="INTER">INTER</option>
+                    <option value="DIPLOMO">DIPLOMO</option>
+                    <option value="ENIGINEERING">ENGINEERING</option>
+                    <option value="DEGREE">DEGREE</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Mail</td>
+            <td><input type="text" placeholder="xyz@gmail.com" name="" required></td>
+        </tr>
+        <tr>
+            <td>Phone number</td>
+            <td>
+                <select>
+                    <option>+91</option>
+                    <option>+567</option>
+                    <option>+456</option>
+                    <option>+987</option>
+                    <option>+234</option>
+                    <option>+865</option>
+                    <option>+457</option>
+                </select>
+                <input type="Phone" placeholder="908*" name="">
+            </td>
+        </tr>
+        <tr>
+            <td>Age</td>>
+            <td>
+                <input type="range" min="18" max="30" id="get" onchange="fetch()"/>
+                <input type="text" id="put"/>
+            
+            </td>
+        </tr>
+        <tr>
+            <td>Photo:</td><td><input type="file"></td>
+        </tr>
+        <tr>
+            <td><center><input type="submit" style="background-color:blanchedalmond"></center></td>
+        </tr>
+    </table>
+    </center>
+    </legend>
+    </fieldset>
+</body>
+</html>
